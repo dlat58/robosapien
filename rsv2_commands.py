@@ -1,6 +1,9 @@
 #COMMAND_BITS = 12
 # Hexadecimal hex-map database for standard RoboSapien V2 moves
+# Note most of these commands are wrong/V1
+# Actual commands can be found here: https://markcra.com/robot/ir_codes_v2.php
 COMMANDS = {
+    # This is a nasty way of specifying bit count of comamnd words (12 for V2)
     "BIT_COUNT": 12,
     # https://markcra.com/robot/ir_codes.php
     "TURN_RIGHT": 0x80,
@@ -40,7 +43,7 @@ COMMANDS = {
     "RIGHT_HAND_SWEEP": 0xC1,
     "BURP": 0xC2,
     "RIGHT_HAND_STRIKE_2": 0xC3,
-    "HIGH_FIVE": 0xC4,
+    
     "RIGHT_HAND_STRIKE_1": 0xC5,
     "BULLDOZER": 0xC6,
     "OOPS": 0xC7,
@@ -50,7 +53,13 @@ COMMANDS = {
     "LEFT_HAND_STRIKE_2": 0xCB,
     "TALKBACK": 0xCC,
     "LEFT_HAND_STRIKE_1": 0xCD,
+
+    "HIGH_FIVE": 0x369,
+    "HEY_BABY": 0x36B,
+    "SPARE_CHANGE": 0x371,
     "ROAR": 0x374,
+
+    "ROAM": 0x382,
     
     "DEMO0": 0xD0,
     "POWEROFF": 0xD1,
@@ -65,10 +74,6 @@ COMMANDS = {
     
     # Abbreviations
     "HIGH5": 0x369,
-    "HEY_BABY": 0x36B,
-    "SPARE_CHANGE": 0x371,
-    
     "BULL": 0xC6
-    
 }
 
