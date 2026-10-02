@@ -11,6 +11,7 @@ from rs import RS
 high5 = machine.Pin(0, machine.Pin.IN, machine.Pin.PULL_DOWN)
 high5.irq(lambda p:doHigh5(p))
 
+# Instantiate the RS object, pass IR pin and commands dictionary
 rs = RS(15, COMMANDS)
 
 def doHigh5(pin):
